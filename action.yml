@@ -1,0 +1,27 @@
+name: notify-slack
+description: Notify slack
+branding:
+  icon: 'book-open'
+  color: 'green'
+
+inputs:
+  input-one:
+    description: 'First input'
+    required: true
+    default: 'FirtOne'
+  input-two:
+    description: 'Second input'
+    required: true
+    default: 'SecondOne'
+outputs:
+  output-one:
+    description: 'Output First Input'
+  output-two:
+    descriptio: 'Output Second Input'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.input-one }}
+    - ${{ inputs.input-two }}
