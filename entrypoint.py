@@ -7,6 +7,6 @@ if __name__ == "__main__" :
     input2 = sys.argv[2]
     output1 = "1"
     output2 = "2"
-    print("::set-output name=output-one::" + output1)
-    print("::set-output name=output-two::" + output2)
+    print("::set-output name=output-one::" + input1)
+    print("::set-output name=output-two::" + input2)
 
