@@ -14,4 +14,5 @@ RUN true \
 
 
 COPY entrypoint.py /entrypoint.py
+RUN chmod a+x /entrypoint.py
 ENTRYPOINT ["/entrypoint.py"]
